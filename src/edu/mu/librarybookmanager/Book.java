@@ -60,7 +60,7 @@ public class Book {
 	}
 	
 	public String toString() {
-		return "Book [book=" + book + ", author" + author + ", ISBN" + ISBN + ", price" + price;
+		return "Book [book=" + book + ", author" + author + ", ISBN" + ISBN + ", price" + price + "]";
 	}
 	
 	//returns true if two books have same name 
