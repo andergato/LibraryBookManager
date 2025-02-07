@@ -26,6 +26,18 @@ public class Book {
 		
 			}
 	
+	/**
+	 * this is a copy constructor that creates a new book object from an existing book
+	 * @return
+	 */
+	
+	public Book (Book book) {
+		this.book = book.book;
+		this.author = book.author;
+		this.ISBN = book.ISBN;
+		this.price = book.price;
+	}
+	
 	public String getbook() {
 		return book;
 	}
