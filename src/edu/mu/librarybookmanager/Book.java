@@ -30,7 +30,7 @@ public class Book {
 		return book;
 	}
 	
-	public void setbook() {
+	public void setbook(String book) {
 		this.book = book;
 	}
 	
@@ -39,7 +39,7 @@ public class Book {
 		
 	}
 	
-	public void setauthor() {
+	public void setauthor(String author) {
 		this.author = author;
 	}
 	
@@ -47,7 +47,7 @@ public class Book {
 		return ISBN;
 	}
 	
-	public void setISBN() {
+	public void setISBN(String ISBN) {
 		this.ISBN = ISBN;
 	}
 	
@@ -55,9 +55,15 @@ public class Book {
 		return price;
 	}
 	
-	public void setprice() {
+	public void setprice(double price) {
 		this.price = price;
 	}
+	
+	public String toString() {
+		return "Book [book=" + book + ", author" + author + ", ISBN" + ISBN + ", price" + price;
+	}
+	
+	//returns true if two books have same name 
 	
 
 }
