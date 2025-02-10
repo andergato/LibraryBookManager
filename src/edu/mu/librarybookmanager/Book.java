@@ -83,7 +83,7 @@ public class Book {
 				{
 			return true;
 		}
-		else {
+		 
 			
 		return false;	
 	}
@@ -91,4 +91,4 @@ public class Book {
   }
 	
 
-}
+
