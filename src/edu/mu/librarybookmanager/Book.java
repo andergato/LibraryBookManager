@@ -77,5 +77,18 @@ public class Book {
 	
 	//returns true if two books have same name 
 	
+	public boolean equals(Object obj) {
+		Book book = (Book)obj;
+		if(this.book.equals(book.getbook())) 
+				{
+			return true;
+		}
+		else {
+			
+		return false;	
+	}
+
+  }
+	
 
 }
