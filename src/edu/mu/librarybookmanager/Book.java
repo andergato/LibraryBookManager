@@ -14,7 +14,7 @@ public class Book {
 	}
 	
 	/**
-	 * this is a parameterized constructor below (javadoc test 1) 
+	 * this is a parameterized constructor below 
 	 */
 	
 	
@@ -75,17 +75,17 @@ public class Book {
 		return "Book [book=" + book + ", author" + author + ", ISBN" + ISBN + ", price" + price + "]";
 	}
 	
-	//returns true if two books have same name 
+	/**
+	 * conditional statement comparing two books with the same name by comparing current book input to our parameters of what a book can be 
+	 */
 	
-	public boolean equals(Object obj) {
+	public boolean twinBooks(Object obj) {
 		Book book = (Book)obj;
 		if(this.book.equals(book.getbook())) 
 				{
 			return true;
 		}
-		 
-			
-		return false;	
+		 return false;
 	}
 
   }
