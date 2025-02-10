@@ -12,11 +12,9 @@ public class Book {
 		this.ISBN = "Unknown";
 		this.price = 0.0;
 	}
-	
 	/**
 	 * this is a parameterized constructor below 
 	 */
-	
 	
 	public Book(String book, String author, String ISBN, double price) {
 		this.book = book;
@@ -25,7 +23,6 @@ public class Book {
 		this.price = price;
 		
 			}
-	
 	/**
 	 * this is a copy constructor that creates a new book object from an existing book
 	 * @return
@@ -48,7 +45,6 @@ public class Book {
 	
 	public String getauthor() {
 		return author;
-		
 	}
 	
 	public void setauthor(String author) {
@@ -71,24 +67,24 @@ public class Book {
 		this.price = price;
 	}
 	
+	@Override
 	public String toString() {
 		return "Book [book=" + book + ", author" + author + ", ISBN" + ISBN + ", price" + price + "]";
 	}
-	
 	/**
 	 * conditional statement comparing two books with the same name by comparing current book input to our parameters of what a book can be 
 	 */
 	
-	public boolean twinBooks(Object obj) {
-		Book book = (Book)obj;
+	@Override
+	public boolean equals(Object other) {
+		Book book = (Book)other;
 		if(this.book.equals(book.getbook())) 
 				{
 			return true;
 		}
 		 return false;
 	}
-
-  }
+}
 	
 
 
