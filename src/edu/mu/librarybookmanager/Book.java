@@ -35,19 +35,19 @@ public class Book {
 		this.price = book.price;
 	}
 	
-	public String getbook() {
+	public String getBook() {
 		return book;
 	}
 	
-	public void setbook(String book) {
+	public void setBook(String book) {
 		this.book = book;
 	}
 	
-	public String getauthor() {
+	public String getAuthor() {
 		return author;
 	}
 	
-	public void setauthor(String author) {
+	public void setAuthor(String author) {
 		this.author = author;
 	}
 	
@@ -59,11 +59,11 @@ public class Book {
 		this.ISBN = ISBN;
 	}
 	
-	public double getprice() {
+	public double getPrice() {
 		return price;
 	}
 	
-	public void setprice(double price) {
+	public void setPrice(double price) {
 		this.price = price;
 	}
 	
@@ -78,7 +78,7 @@ public class Book {
 	@Override
 	public boolean equals(Object obj) {
 		Book book = (Book)obj;
-		if(this.book.equals(book.getbook())) 
+		if(this.book.equals(book.getBook())) 
 				{
 			return true;
 		}
