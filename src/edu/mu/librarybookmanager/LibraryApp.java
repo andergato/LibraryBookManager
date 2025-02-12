@@ -53,8 +53,23 @@ public class LibraryApp {
 		 book1.setISBN("9119564730");
 		 book1.setPrice(9.99);
 		 System.out.println("book info" + book5);
+		 
+		 //adds books to library class
+		 library.addBook(book1);
+		 library.addBook(book2);
+		 library.addBook(book3);
+		 library.addBook(book4);
+		 library.addBook(book5);
+		 
+		 //displays the books
+		 library.displayBooks();
+		 
+		 
 		
 	}
+	
+	
+	
 	
 	
 	}
