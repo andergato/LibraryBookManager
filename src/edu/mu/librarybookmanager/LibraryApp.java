@@ -40,18 +40,18 @@ public class LibraryApp {
 //		 System.out.println("book info" + book3);
 		
 		 Book book4 = new Book();
-		 book1.setBook("The World Almanac And Book Of Facts 2024");
-		 book1.setAuthor("Sarah Janssen");
-		 book1.setISBN("29143560083");
-		 book1.setPrice(12.99);
+		 book4.setBook("The World Almanac And Book Of Facts 2024");
+		 book4.setAuthor("Sarah Janssen");
+		 book4.setISBN("29143560083");
+		 book4.setPrice(12.99);
 //		 System.out.println("book info" + book4);
 		 
 		 //the book to test what would happen if two names are the same 
 		 Book book5 = new Book();
-		 book1.setBook("my year of rest and relaxation");
-		 book1.setAuthor("Not Otessa Moshfegeh");
-		 book1.setISBN("9119564730");
-		 book1.setPrice(9.99);
+		 book5.setBook("my year of rest and relaxation");
+		 book5.setAuthor("Not Otessa Moshfegeh");
+		 book5.setISBN("9119564730");
+		 book5.setPrice(9.99);
 //		 System.out.println("book info" + book5);
 		 
 		 //adds books to library class
@@ -59,6 +59,7 @@ public class LibraryApp {
 		 library.addBook(book2);
 		 library.addBook(book3);
 		 library.addBook(book4);
+		 library.addBook(book5);
 		 
 		 //Searches for a book that exists by its ISBN
 		 System.out.println(library.searchByISBN("9119564730"));
