@@ -1,4 +1,5 @@
 package edu.mu.librarybookmanager;
+import java.util.Arrays;
 
 
 public class Library {
@@ -29,7 +30,8 @@ public class Library {
 	
 	
 	/**
-	 * Removes a book from the library
+	 * Removes a book from the library by creating a new array with one less
+	 * 
 	 * @param book
 	 * The Book you would like to remove from the library
 	 * @return
@@ -37,7 +39,21 @@ public class Library {
 	 * will return false.
 	 */
 	public boolean removeBook(Book book){
-		searchByISBN(book.getISBN());
+		if(searchByISBN(book.getISBN()) == null) {
+			return false;
+		}
+		Book[] books2 = new Book[count-1];
+		int books2Index = 0;
+		
+		for(int i = 0; i < count; i++) {
+			if(books[i] != book) {
+				books2[books2Index] = books[i];
+				books2Index++;
+			}
+		}
+		count--;
+		books = books2;
+		
 		return true;
 	}
 	
@@ -63,8 +79,8 @@ public class Library {
 	 * Uses toString for each book in the library to display information about each.
 	 */
 	public void displayBooks() {
-		for(int i = 0; i < 5; i++) {
-			books[i].toString();
+		for(int i = 0; i < count; i++) {
+			System.out.println(books[i]);
 		}
 	}
 	
