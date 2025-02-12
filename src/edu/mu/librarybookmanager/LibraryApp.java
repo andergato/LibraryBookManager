@@ -1,12 +1,21 @@
 package edu.mu.librarybookmanager;
 
+import edu.mu.librarybookmanager.Library;
+
 public class LibraryApp {
 
 	public static void main(String[] args) {
+		
+		/*
+		 * creates a library object 
+		 */
+		Library library = new Library();
+		
+		
 		// TODO Auto-generated method stub
 		
 		/*
-		 * Added three instances of books
+		 * Added five instances of books
 		 */
 		
 		 Book book1 = new Book();
@@ -30,8 +39,27 @@ public class LibraryApp {
 		 book3.setprice(11.99);
 		 System.out.println("book info" + book3);
 		
+		 Book book4 = new Book();
+		 book1.setbook("The World Almanac And Book Of Facts 2024");
+		 book1.setauthor("Sarah Janssen");
+		 book1.setISBN("29143560083");
+		 book1.setprice(12.99);
+		 System.out.println("book info" + book4);
+		 
+		 //the book to test what would happen if two names are the same 
+		 Book book5 = new Book();
+		 book1.setbook("my year of rest and relaxation");
+		 book1.setauthor("Not Otessa Moshfegeh");
+		 book1.setISBN("9119564730");
+		 book1.setprice(9.99);
+		 System.out.println("book info" + book5);
 		
-		
+	}
+	
+	public boolean removeBook(int index) {
+		if(index < 0 || index > books.length -1) {
+			
+		}
 	}
 
 }
