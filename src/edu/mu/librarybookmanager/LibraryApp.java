@@ -56,10 +56,7 @@ public class LibraryApp {
 		
 	}
 	
-	public boolean removeBook(int index) {
-		if(index < 0 || index > books.length -1) {
-			
-		}
+	
 	}
 
 }
