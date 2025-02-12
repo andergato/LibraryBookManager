@@ -42,18 +42,12 @@ public class Library {
 		if(searchByISBN(book.getISBN()) == null) {
 			return false;
 		}
-		Book[] books2 = new Book[count-1];
-		int books2Index = 0;
-		
 		for(int i = 0; i < count; i++) {
-			if(books[i] != book) {
-				books2[books2Index] = books[i];
-				books2Index++;
+			if(books[i] == book) {
+				books[i] = null;
 			}
 		}
 		count--;
-		books = books2;
-		
 		return true;
 	}
 	
