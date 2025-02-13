@@ -39,12 +39,12 @@ public class LibraryApp {
 		 book4.setISBN("29143560083");
 		 book4.setPrice(12.99);
 
-		 //the book to test what would happen if two names are the same 
+		 //the book to test what would happen if two isbns are the same 
 		 Book book5 = new Book();
-		 book5.setBook("my year of rest and relaxation");
-		 book5.setAuthor("Not Otessa Moshfegeh");
-		 book5.setISBN("9119564730");
-		 book5.setPrice(9.99);
+		 book5.setBook("c++ programming language");
+		 book5.setAuthor("Bjarne Stroustop");
+		 book5.setISBN("9188476526");
+		 book5.setPrice(19.99);
 		 
 		 /**
 		   * adds four books to the library class, one is left out to see if book is removed when it doesn't exist
