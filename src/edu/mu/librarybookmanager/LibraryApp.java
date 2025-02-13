@@ -6,15 +6,12 @@ public class LibraryApp {
 
 	public static void main(String[] args) {
 		
-		/**
-		 * creates a new library object from the library class
-		 */
+		//creates a new library object from the library class
+		 
 		Library library = new Library();
 	
-		/**
-		 * adds five instances of books
-		 */
-		
+		 //adds five instances of books
+		 
 		 Book book1 = new Book();
 		 book1.setBook("my year of rest and relaxation");
 		 book1.setAuthor("Ottessa Moshfegeh");
@@ -46,9 +43,8 @@ public class LibraryApp {
 		 book5.setISBN("9188476526");
 		 book5.setPrice(19.99);
 		 
-		 /**
-		   * adds four books to the library class, one is left out to see if book is removed when it doesn't exist
-		   */
+		 //adds four books to the library class, one is left out to see if book is removed when it doesn't exist
+		   
 		 library.addBook(book1);
 		 library.addBook(book2);
 		 library.addBook(book3);

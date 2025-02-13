@@ -9,9 +9,7 @@ public class Book {
 	private String ISBN;
 	private double price;
 	
-	/**
-	 * adds a parameterized constructor with current instances of objects with the string attributes as "unknown" and the current instance of the double attribute set at 0.0 
-	 */
+ //adds a parameterized constructor with current instances of objects with the string attributes as "unknown" and the current instance of the double attribute set at 0.0 
 	
 	public Book() {
 		this.book = "Unknown";
@@ -21,6 +19,8 @@ public class Book {
 	}
 	/**
 	 * this is a parameterized constructor below, it sets the current instance of the reference variable to the current instance of the book object
+	 * @param
+	 * parameters include the private attributes that had already been set in the Book class
 	 */
 	
 	public Book(String book, String author, String ISBN, double price) {
@@ -32,8 +32,9 @@ public class Book {
 			}
 	/**
 	 * this is a copy constructor that creates a new book object from an existing book
-	 * @return
-	 */
+	 * @param
+	 * the parameters include type book of the book class for when instances of book are made
+	 */ 
 	
 	public Book (Book book) {
 		this.book = book.book;
@@ -43,6 +44,10 @@ public class Book {
 		
 		/**
 		 * these are getter and setter methods below that returns and sets the private attributes 
+		 * @param
+		 * parameters of the set methods include the strings book, author, isbn and price
+		 * @return
+		 * the get methods return the respective attributes that the get methods are accessing
 		 */
 	}
 	
@@ -78,7 +83,9 @@ public class Book {
 		this.price = price;
 	}
 	/**
-	 * string statement for when we display each book in the library class   
+	 * string statement for when we display each book in the library class 
+	 * @return
+	 * returns the book, author, isbn and price of a book in one string  
 	 */
 	
 	@Override
@@ -86,10 +93,11 @@ public class Book {
 		return "Book [book=" + book + ", author" + author + ", ISBN" + ISBN + ", price" + price + "]";
 	}
 	/**
+	 * conditional statement that checks if two isbn's of a book are equal or not 
 	 * @param obj
-	 * conditional statement comparing two books with the same ISBN by comparing current book input to our parameters of what a book can be
+	 *  takes object as a parameter obj to a book so it can compares the isbn field of the object with the isbn of the books objects
 	 * @return
-	 *  returns true if book has a isbn that exists, returns false if 
+	 *  returns true if book has a isbn that matches, returns false if they are not equal 
 	 */
 	
 	@Override

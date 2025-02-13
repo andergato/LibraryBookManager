@@ -1,7 +1,6 @@
 package edu.mu.librarybookmanager;
 import java.util.Arrays;
 
-
 public class Library {
 	
 	private Book[] books = new Book[5];
@@ -28,7 +27,6 @@ public class Library {
 		}
 	}
 	
-	
 	/**
 	 * Removes a book from the library by creating a new array with one less
 	 * 
@@ -51,7 +49,6 @@ public class Library {
 				}
 				count--;
 				return true;
-
 			}
 			
 		}
