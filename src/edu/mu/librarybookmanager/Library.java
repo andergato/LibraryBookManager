@@ -39,17 +39,20 @@ public class Library {
 	 * will return false.
 	 */
 	public boolean removeBook(Book book){
-		if(searchByISBN(book.getISBN()) == null) {
+		if(book == null || searchByISBN(book.getISBN()) == null) {
 			return false;
 		}
 		for(int i = 0; i < count; i++) {
-			if(books[i] == book) {
+			if(books[i] != null && books[i] == book) {
 				books[i] = null;
+				count--;
+				return true;
 			}
+			
 		}
-		count--;
-		return true;
+		return false;
 	}
+	
 	
 	/**
 	 * Simple search method for finding a book by its ISBN. 

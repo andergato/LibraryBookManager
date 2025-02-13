@@ -59,16 +59,16 @@ public class LibraryApp {
 		 library.addBook(book2);
 		 library.addBook(book3);
 		 library.addBook(book4);
-		 library.addBook(book5);
+	
 		 
 		 //Searches for a book that exists by its ISBN
-		 System.out.println(library.searchByISBN("9119564730"));
+		 System.out.println(library.searchByISBN("29143560083"));
 		 
 		 //Removes a book that exists in the library
 		 library.removeBook(book3);
 		 
 		 //Attempts to remove a book that does not exist in the library
-		 library.removeBook(book5);
+		library.removeBook(book5);
 		 
 		 //displays the books
 		 library.displayBooks();
