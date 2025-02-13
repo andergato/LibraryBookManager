@@ -45,6 +45,9 @@ public class Library {
 		for(int i = 0; i < count; i++) {
 			if(books[i] == book) {
 				books[i] = null;
+				for(int j = i; j < count - 1; j++) {
+					books[j] = books[j+1];
+				}
 			}
 		}
 		count--;
@@ -61,7 +64,7 @@ public class Library {
 	 * otherwise will return null. 
 	 */
 	public Book searchByISBN(String ISBN) {
-		for(int i = 0; i < 5; i++) {
+		for(int i = 0; i < count; i++) {
 			if(books[i].getISBN() == ISBN) {
 				return books[i];
 			}
