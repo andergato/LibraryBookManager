@@ -90,7 +90,7 @@ public class Book {
 	
 	@Override
 	public String toString() {
-		return "Book [book=" + book + ", author" + author + ", ISBN" + ISBN + ", price" + price + "]";
+		return "book has been found: " + book + " by author " + author + " (ISBN = " + ISBN + ", price = " + price + ")";
 	}
 	/**
 	 * conditional statement that checks if two isbn's of a book are equal or not 

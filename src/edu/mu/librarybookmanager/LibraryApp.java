@@ -44,25 +44,36 @@ public class LibraryApp {
 		 book5.setPrice(19.99);
 		 
 		 //adds four books to the library class, one is left out to see if book is removed when it doesn't exist
-		   
+		 System.out.println("adding books...");
 		 library.addBook(book1);
 		 library.addBook(book2);
 		 library.addBook(book3);
 		 library.addBook(book5);
-	
+		 System.out.println("books have been added\n");
+		 
 		 //Searches for a book that exists by its ISBN
-		 System.out.println(library.searchByISBN("29143560083"));
+		 System.out.println("searching for book with isbn:");
+		 System.out.println(library.searchByISBN("7383838393"));
+
+		 
+		 System.out.println("\nall books currently in the library: ");
+		 library.displayBooks();
 		 
 		 //Removes a book that exists in the library
+		 System.out.println("\nattempting to remove book");
 		 library.removeBook(book3);
+		 System.out.println("removing book: " + (book3));
 		 
 		 //Attempts to remove a book that does not exist in the library
-		library.removeBook(book4);
+		 System.out.println("\nattempting to remove book");
+		 library.removeBook(book4);
+		 System.out.println("book does not exist in library class, cannot remove book\n");
 		 
 		 //displays the books
+		 System.out.println("all books currently in library:");
 		 library.displayBooks();
+		
 	}
-	
 }
 
 
